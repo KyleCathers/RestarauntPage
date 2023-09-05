@@ -69,10 +69,13 @@ function pageInit() {
     mainContent.appendChild(home());
 
     // footer section
-    const footer = document.createElement('a');
+    const footer = document.createElement('div');
     footer.setAttribute('id', 'footer');
-    footer.setAttribute('href', 'https://github.com/KyleCathers');
-    footer.setAttribute('target', '_blank');
+
+    const footerLink = document.createElement('a');
+    footerLink.setAttribute('id', 'footer-link');
+    footerLink.setAttribute('href', 'https://github.com/KyleCathers');
+    footerLink.setAttribute('target', '_blank');
 
     const footerText = document.createElement('div');
     footerText.setAttribute('id', 'footer-text');
@@ -82,8 +85,10 @@ function pageInit() {
     footerImg.setAttribute('id', 'footer-img');
     footerImg.src = githubIcon;
 
-    footer.appendChild(footerText);
-    footer.appendChild(footerImg);
+    footerLink.appendChild(footerText);
+    footerLink.appendChild(footerImg);
+
+    footer.appendChild(footerLink);
 
     container.appendChild(header);
     container.appendChild(mainContent);

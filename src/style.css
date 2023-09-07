@@ -221,10 +221,6 @@ body {
     gap: 50px;
 }
 
-#google-map {
-    /*add responsivity*/
-}
-
 #contact-info {
     display: flex;
     justify-content: center;

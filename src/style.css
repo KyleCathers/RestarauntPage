@@ -30,9 +30,7 @@ body {
     padding: 0px 20px 0px 20px;
     box-sizing: border-box;
     position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
 }
 
 #header-text {
@@ -109,7 +107,7 @@ body {
     justify-content: space-between;
     box-sizing: border-box;
     padding: 20px 0px 20px 5px;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 #info-box {
@@ -248,4 +246,102 @@ body {
 #contact-hours {
     padding-left: 20px;
     padding-bottom: 10px;
+}
+
+#main-content {
+    height: calc(100vh - 150px);
+}
+
+@media (max-width: 950px) {
+    #contact-box {
+        flex-direction: column;
+    }
+
+    #google-map iframe {
+        width: 75vw;
+    }
+}
+
+@media (max-width: 680px) {
+
+    #home-content #left-side {
+        height: 20vh;
+        width: 100%;
+    }
+
+    #menu-content #left-side {
+        height: 40vh;
+        width: 100%;
+    }
+
+    #home-content,
+    #menu-content {
+        flex-direction: column;
+    }
+
+    #right-side {
+        min-width: 100%;
+        padding-left: 0px;
+        overflow-x: hidden;
+    }
+
+    #info-box {
+        width: 90%;
+    }
+
+    #header {
+        font-size: 1.3rem;
+        padding: 0px 5px 0px 0px;
+    }
+
+    #header-left {
+        gap: 0px;
+    }
+
+    #header-text {
+        font-size: 2rem;
+    }
+
+    #home-pic {
+        width: 90%;
+    }
+
+    #home-title {
+        font-size: 3rem;
+    }
+
+    .burger {
+        flex-direction: column;
+        height: auto;
+        padding-left: 0px;
+    }
+
+    .burger .img {
+        height: 270px;
+        padding-bottom: 10px;
+    }
+
+    #top-home-border,
+    #bottom-home-border {
+        margin-left: 5px;
+        height: 65px;
+    }
+
+    .burger .right {
+        margin-bottom: 20px;
+    }
+
+    #contact-info {
+        width: 90%;
+    }
+
+    #contact-box {
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    #contact-content {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 }

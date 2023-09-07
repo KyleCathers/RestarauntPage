@@ -5,6 +5,7 @@ import chickenBurgerPic from './images/chickenBurger.jpg';
 import salmonBurgerPic from './images/salmonBurger.jpg';
 
 function menu() {
+    // list of menu items, all under burger html class
     const menuList = [
         {
             name: "Breakfast", // ❖
@@ -67,6 +68,7 @@ function menu() {
     const menuBox = document.createElement('div');
     menuBox.setAttribute('id', 'menu-box');
 
+    // add each burger item to menu DOM
     menuList.forEach((menuItem) => {
         menuBox.append(addBurger(menuItem));
     });
@@ -84,7 +86,7 @@ function menu() {
 
 export default menu;
 
-
+// add burger object to the menu DOM
 function addBurger(menuItem) {
     const item = document.createElement('div');
     item.setAttribute('id', `${menuItem.name}-burger`);

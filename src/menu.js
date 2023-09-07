@@ -42,7 +42,7 @@ function menu() {
 
     const breakfastBurgerTitle = document.createElement('div');
     breakfastBurgerTitle.setAttribute('class', 'title');
-    breakfastBurgerTitle.innerHTML = "Breakfast Burger - $13";
+    breakfastBurgerTitle.innerText = "Breakfast Burger - $13";
 
     const breakfastBurgerText = document.createElement('div');
     breakfastBurgerText.setAttribute('class', 'text');
@@ -72,7 +72,7 @@ function menu() {
 
     const beefBurgerTitle = document.createElement('div');
     beefBurgerTitle.setAttribute('class', 'title');
-    beefBurgerTitle.innerHTML = "Double Beef Burger - $18";
+    beefBurgerTitle.innerText = "Double Beef Burger - $18";
 
     const beefBurgerText = document.createElement('div');
     beefBurgerText.setAttribute('class', 'text');
@@ -102,7 +102,7 @@ function menu() {
 
     const bisonBurgerTitle = document.createElement('div');
     bisonBurgerTitle.setAttribute('class', 'title');
-    bisonBurgerTitle.innerHTML = "Bison Burger - $17";
+    bisonBurgerTitle.innerText = "Bison Burger - $17";
 
     const bisonBurgerText = document.createElement('div');
     bisonBurgerText.setAttribute('class', 'text');
@@ -131,7 +131,7 @@ function menu() {
 
     const chickenBurgerTitle = document.createElement('div');
     chickenBurgerTitle.setAttribute('class', 'title');
-    chickenBurgerTitle.innerHTML = "Chicken Burger - $15";
+    chickenBurgerTitle.innerText = "Chicken Burger - $15";
 
     const chickenBurgerText = document.createElement('div');
     chickenBurgerText.setAttribute('class', 'text');
@@ -159,7 +159,7 @@ function menu() {
 
     const salmonBurgerTitle = document.createElement('div');
     salmonBurgerTitle.setAttribute('class', 'title');
-    salmonBurgerTitle.innerHTML = "Salmon Burger - $15";
+    salmonBurgerTitle.innerText = "Salmon Burger - $15";
 
     const salmonBurgerText = document.createElement('div');
     salmonBurgerText.setAttribute('class', 'text');

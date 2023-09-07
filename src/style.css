@@ -213,3 +213,43 @@ body {
     font-size: 1.2rem;
     white-space: nowrap;
 }
+
+#contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#google-map {
+    /*add responsivity*/
+}
+
+#contact-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #004101;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+#contact-title {
+    font-size: 2.5rem;
+}
+
+#contact-title,
+#contact-address-header,
+#contact-number-header,
+#contact-email-header,
+#contact-hours-header {
+    font-weight: bold;
+}
+
+#contact-address,
+#contact-number,
+#contact-email,
+#contact-hours {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
